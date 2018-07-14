@@ -119,7 +119,7 @@ if (isset($_POST["key"])) {
 
 ?>
 	<div class="c">
-		<h3>f00f.xyz analytics</h3>
+		<h3>xyzanalytics</h3>
 		<form action="" method="post">
 			<input type="text" placeholder="Access key" name="key">
 			<input type="submit" value="Login">
