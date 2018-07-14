@@ -58,6 +58,7 @@ Javascript is stored in a file - `script.js`. From the PHP script you can change
 | PHP modules |
 | ----------- |
 | php-mysqli  |
+| php-json    |
 
 | SQL server |
 | ---------- |
@@ -65,7 +66,17 @@ Javascript is stored in a file - `script.js`. From the PHP script you can change
 | *or*       |
 | MariaDB    |
 
+## Setup
+| File          | Location                            | Notes                      | Required                 |
+| ------------- | ----------------------------------- | -------------------------- | ------------------------ |
+| `include.php` | Preferably outside the webroot      | The main script to include | Yes                      |
+| `viewer.php`  | Inside webroot, viewable by browser | Viewer script              | No                       |
+| `script.js`   | Inside webroot, viewable by browser | For viewer script          | If viewer is set up, yes |
+
 ## SQL setup
+* Make a database for this
+* Set up an account and give permissions to it
+* Create the following table
 ```
 create table con(`id` int not null auto_increment, `ip` varchar(64) not null, `time` int not null, `pretty_time` varchar(128) not null `location` varchar(128) not null, `domain` varchar(128) not null, `geo_city` varchar(1024), `geo_region` varchar(1024), `geo_country` varchar(1024), `geo_location` varchar(1024), `geo_isp` varchar(1024), primary key(`id`) );
 ```
@@ -77,3 +88,6 @@ For geolocation, this script uses the ipinfo.io API. It's **free for the first 1
 |   Name        | Where         | Link              |
 | ------------- | ------------- | ----------------- |
 | ipinfo.io API | `include.php` | https://ipinfo.io |
+
+## What's up with the indentation?
+I use more than one editor. Sometimes configurations are screwed up and it uses tabs instead of spaces and vice versa. If it *works on my machine*, I won't fix it until it becomes a problem.

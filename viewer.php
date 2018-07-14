@@ -2,6 +2,13 @@
 <html>
 <head>
 <?php
+/*
+ * xyzanalytics - A small analytics script
+ * Written in 2018 by cmp cmp@airmail.cc
+ * To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
+ * You should have received a copy of the CC0 Public Domain Dedication along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+ */
+
 // ******** CONFIG ********
 	$SECRET_KEY = "sha256 hashed secret key";
 	$USER = "analytics";
