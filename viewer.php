@@ -37,8 +37,10 @@ if (isset($_POST["key"])) {
 	}
 	echo '<script src="script.js"></script>';
 	echo '<p id="filtDom">Filter domain: <input id="site" type="text"><button type="button" onclick="filterSite()">Filter</button></p>';
-	echo '<p id="filtDomA"></p>';
-	echo '<p><input type="checkbox" id="filtBot" onchange="hideBots()"> Hide bots</p>';
+    echo '<p id="filtDomA"></p>';
+    if ($GEO === true) {
+        echo '<p><input type="checkbox" id="filtBot" onchange="hideBots()"> Hide bots</p>';
+    }
 	$sql = new mysqli("127.0.0.1", $USER, $PASS, $DB);
 	if (!$sql) {
 		echo 'MySQL error';
