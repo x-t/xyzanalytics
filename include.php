@@ -29,7 +29,7 @@ function find_ip() {
         return $_SERVER['REMOTE_ADDR'];
     else
         return false;
-}
+}dont merge this i have no idea what im doing
 
 function get_geolocation($ip) {
     return $ip === "unknown" ? "unknown" : json_decode(file_get_contents("https://ipinfo.io/{$ip}/json"));
