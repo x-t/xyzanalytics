@@ -8,7 +8,7 @@
 
 // ******** CONFIG ********
 $MYSQL_USER = "analytics";  // MySQL user
-$MYSQL_PASS = "pass";       // MySQL password
+$MYSQL_PASS = "password";       // MySQL password
 $MYSQL_DB = "analytics";    // MySQL database
 $MYSQL_TB = "con";          // MySQL table
 $GEO_REFRESH = 604800;      // Geolocation refresh rate (seconds)
