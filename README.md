@@ -1,5 +1,5 @@
 # xyzanalytics
-A small (under 100 lines) PHP script for collecting analytics. It collects IP addresses, so, it's your duty to be GDPR-compliant here.
+A small (under 100 lines) PHP script for collecting analytics. It collects IP addresses, so it's your duty to be GDPR-compliant here.
 
 ## Usage
 The repository has two scripts, let's break down their usage.
